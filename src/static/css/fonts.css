@@ -1,0 +1,13 @@
+@font-face {
+  font-family: "San Francisco Regular";
+  src: url("../fonts/SF-UI-Display-Regular.otf");
+}
+
+@font-face {
+  font-family: "San Francisco Medium";
+  src: url("../fonts/SF-UI-Display-Medium.otf");
+}
+
+* {
+  font-family: "San Francisco Regular";
+}

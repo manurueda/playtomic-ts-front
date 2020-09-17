@@ -1,0 +1,47 @@
+@import "./_variables.scss";
+
+/* TODO: Fonts are not the same as in the sketch file... https://medium.com/@nathangitter/why-your-app-looks-better-in-sketch-3a01b22c43d7
+
+*/
+
+/* GENERAL SETTINGS */
+body,
+html {
+  margin: 0px;
+  padding: 0px;
+  font-family: "San Francisco";
+  -ms-overflow-style: none;
+  overflow: -moz-scrollbars-none;
+  background: #f2f5f7;
+  color: #2e4369;
+}
+body::-webkit-scrollbar {
+  display: none;
+}
+
+input:focus,
+textarea:focus,
+button:focus {
+  outline: none;
+}
+
+a {
+  color: white;
+}
+
+.column {
+  padding-bottom: 0;
+}
+.columns:not(:last-child) {
+  margin-bottom: 0;
+}
+
+/* HELPERS */
+.center {
+  justify-content: center;
+  align-items: center;
+}
+.is-vertical-center {
+  display: flex;
+  align-items: center;
+}

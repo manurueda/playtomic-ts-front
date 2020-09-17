@@ -1,0 +1,67 @@
+@import "../node_modules/bulma/sass/utilities/initial-variables.sass";
+
+$pale-grey: #f2f5f7;
+$silver: #d0dadf;
+$white: #fff;
+
+$dark-grey-blue: #2e4369;
+$bright-sky-blue: #00b9ff;
+
+$title-size: 1.25rem;
+$title-weight: $weight-bold;
+$title-color: #00b9ff;
+
+$size-2: 1.5625rem;
+$size-5: 1.0625rem;
+$size-6: 0.8rem;
+
+$navbar-breakpoint: $tablet;
+$navbar-padding-vertical: 5rem;
+$navbar-burger-color: $bright-sky-blue;
+$navbar-tab-hover-background-color: transparent;
+
+@media (min-width: 768px) {
+  $box-padding: 1.7rem 1.7rem 1.7rem 2.5rem;
+}
+
+$box-color: #2e4369;
+$box-shadow: 0px 0px 0px 1px $silver;
+$box-radius: 3px;
+
+$tabs-border-bottom-style: solid;
+$tabs-border-bottom-color: $pale-grey;
+
+$tabs-link-hover-border-bottom-color: $pale-grey;
+$tabs-link-active-border-bottom-color: $bright-sky-blue;
+$tabs-link-active-color: $dark-grey-blue;
+
+$dropdown-content-shadow: 0 5px 20px 0 rgba(167, 177, 184, 0.3),
+  0 0 0 0px rgba($black, 0.1);
+
+$breadcrumb-item-color: $bright-sky-blue;
+$breadcrumb-item-hover-color: $dark-grey-blue;
+$breadcrumb-item-active-color: $dark-grey-blue;
+
+$label-weight: 500;
+
+$tag-background-color: white;
+$tag-radius: 15px;
+
+$checkradio-focus: none;
+
+$tooltip-background-color: $white;
+$tooltip-max-width: 12rem;
+$tooltip-background-opacity: 1;
+
+$divider-background-color: white;
+$divider-thickness: 1px;
+$divider-font-size: $size-7;
+$divider-color: $dark-grey-blue;
+
+// GLOBAL LOAD @import
+@import "../node_modules/bulma/bulma";
+
+// LOAD EXTENSIONS
+@import "../node_modules/bulma-extensions/bulma-checkradio/src/sass/index.sass";
+@import "../node_modules/bulma-extensions/bulma-tooltip/src/sass/index.sass";
+@import "../node_modules/bulma-extensions/bulma-divider/src/sass/index.sass";

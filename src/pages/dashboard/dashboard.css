@@ -1,0 +1,366 @@
+#sidebar {
+    padding-left: 2vw;
+}
+.nav {
+    padding: 1rem;
+    background: #37517e;
+    color: #fff;
+    transition: all 0.3s;
+}
+.navbar-menu {
+    padding-top: 4rem;
+}
+#homeSubmenu {
+    margin-top: 0.8rem;
+}
+#sidebar ul a {
+    padding: 0.75rem 1rem;
+}
+#sidebar ul ul li {
+    padding: 0.75rem 2rem;
+}
+#sidebar ul li a:hover {
+    color: #00b9ff;
+}
+/*----------------------
+  FOR VIEWPORTS BIGGER 
+  THAN MOBILE 
+------------------------*/
+@media (min-width: 768px) {
+    /* layout reset */
+    #sidebar {
+        height: 100vh;
+    }
+    .sidebar-header {
+        display: inline;
+    }
+    .navbar {
+        padding-top: 43px;
+    }
+}
+.column {
+    padding-bottom: 0;
+}
+.columns:not(:last-child) {
+    margin-bottom: 0;
+}
+
+/*------------------
+      SIDEBAR 
+-------------------*/
+
+.sidebar-strategy {
+    display: inherit;
+}
+
+.sidebar-budget[value='active'] > a > span,
+
+
+.sidebar-planning[value='active'] > a > span,
+
+
+
+.sidebar-library[value='active'] > a > span,
+
+.sidebar-settings[value='active'] > a > span,
+
+/* sidebar burger */
+a.burger > span {
+    height: 2px;
+    width: 30px;
+    margin-bottom: 20px;
+}
+
+.navbar-burger:hover {
+    background-color: transparent;
+    color: white;
+}
+
+/*----------------------------------------------------
+ON/OFF switch ref.: https://proto.io/freebies/onoff/
+------------------------------------*/
+.onoffswitch {
+    position: relative;
+    width: 40px;
+    -webkit-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    display: inline-block;
+    margin-left: 0.25rem;
+}
+.onoffswitch-checkbox {
+    display: none;
+}
+.onoffswitch-label {
+    display: block;
+    overflow: hidden;
+    cursor: pointer;
+    border-radius: 20px;
+}
+.onoffswitch-inner {
+    display: block;
+    width: 200%;
+    margin-left: -100%;
+    transition: margin 0.3s ease-in 0s;
+}
+.onoffswitch-inner:before,
+.onoffswitch-inner:after {
+    display: block;
+    float: left;
+    width: 50%;
+    height: 20px;
+    padding: 0;
+    line-height: 22px;
+    font-size: 8px;
+    color: white;
+    font-family: Trebuchet, Arial, sans-serif;
+    font-weight: bold;
+    box-sizing: border-box;
+}
+.onoffswitch-inner:before {
+    content: 'ON';
+    padding-left: 6.66px;
+    background-color: #2ed06e;
+    color: #ffffff;
+}
+.onoffswitch-inner:after {
+    content: 'OFF';
+    padding-right: 6.66px;
+    background-color: #eeeeee;
+    color: #999999;
+    text-align: right;
+}
+.onoffswitch-switch {
+    display: block;
+    width: 14px;
+    height: 14px;
+    margin: 3px;
+    background: #ffffff;
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    right: 20.66px;
+    border: 2px solid #ffffff;
+    border-radius: 20px;
+    transition: all 0.3s ease-in 0s;
+}
+.onoffswitch-checkbox:checked + .onoffswitch-label .onoffswitch-inner {
+    margin-left: 0;
+}
+.onoffswitch-checkbox:checked + .onoffswitch-label .onoffswitch-switch {
+    right: 0px;
+}
+
+/*------------------
+    add button 
+-------------------*/
+.add-button {
+    display: inline-block;
+    text-decoration: none;
+    background: #2ed06e;
+    color: #fff;
+    width: 27px;
+    height: 27px;
+    border-radius: 50%;
+    text-align: center;
+    vertical-align: baseline;
+    overflow: hidden;
+    transition: 0.4s;
+    box-shadow: none;
+    text-shadow: none;
+    border: none;
+    font-weight: 600;
+    font-size: 15px;
+    line-height: 27px;
+    vertical-align: bottom;
+    cursor: pointer;
+    margin-left: 0.3em;
+}
+.add-button:hover {
+    background: #28b760;
+}
+
+/*------------------
+    profile
+-------------------*/
+.profile {
+    width: 2.5rem;
+    height: 2.5rem;
+    border-radius: 50%;
+}
+
+/*----------------------
+    new strategy button
+----------------------*/
+/* TODO: do from sass in the future */
+.new-strategy-button {
+    padding: 1.25rem 1.65rem;
+}
+
+/*------------------
+    COLORS
+-------------------*/
+.is-9 {
+    background-color: #f2f5f7;
+}
+
+.is-9 .is-size-6 {
+    color: #829ca9;
+    font-family: 'San Francisco Medium';
+}
+
+.select:not(.is-multiple):not(.is-loading)::after {
+    border-color: #3273dc;
+}
+
+/*------------------
+    TABS
+-------------------*/
+
+*[value='active'] > a {
+    color: #00b9ff;
+}
+
+.tabs li.is-active {
+    padding-left: 1em;
+    padding-right: 1em;
+}
+.tabs li.is-active a {
+    padding-left: 0;
+    padding-right: 0;
+}
+
+/*------------------
+    DROPDOWN BLOCKS
+-------------------*/
+
+.dropdown button {
+    border: none;
+    outline: none;
+}
+.dropdown button:focus {
+    border: none;
+    outline: none;
+}
+
+.dropdown:hover span.is-size-6 {
+    color: #2e4369;
+}
+.dropdown:hover .dropdown-arrow {
+    transform: rotate(180deg);
+}
+
+/* TODO: Put this in main.scss */
+.box:hover {
+    border-radius: 3px;
+    box-shadow: 0 0 0 2px rgba(0, 185, 255, 0.23), 0 0 0 1px #00b9ff;
+    background-color: #fff;
+    cursor: pointer;
+    color: #2e5181;
+}
+.box:active {
+    border-radius: 3px;
+    box-shadow: 0 0 0 2px rgba(0, 185, 255, 0.23), 0 0 0 1px #00b9ff, 0 10px 20px 0 rgba(167, 177, 184, 0.22);
+    color: #00b9ff;
+}
+
+/* organization  */
+
+@media (min-width: 768px) {
+    /* layout reset */
+    .level-right > * > * {
+        margin-left: 2vw;
+    }
+}
+
+div .is-9 {
+    padding: 2rem;
+}
+/* TODO: add hover for top navbar icons */
+/* NAVBAR BARS */
+a.burger > span {
+    width: 26px;
+}
+.navbar-burger span:nth-child(1) {
+    top: calc(50% - 10px);
+}
+.navbar-burger span:nth-child(2) {
+    top: calc(50% -1px);
+}
+.navbar-burger span:nth-child(3) {
+    top: calc(50% + 8px);
+}
+.navbar-burger.is-active span:nth-child(1) {
+    transform: translateY(10px) rotate(45deg);
+}
+.navbar-burger.is-active span:nth-child(3) {
+    transform: translateY(-8px) rotate(-45deg);
+}
+
+/*------------------
+      BREADCRUM
+-------------------*/
+nav.breadcrumb {
+    margin-top: 0.5vh;
+    font-family: 'San Francisco Medium';
+    font-size: 20px;
+}
+
+/*------------------
+  ONLY FOR MOBILE 
+-------------------*/
+@media (max-width: 768px) {
+    .right {
+        text-align: right;
+        float: right;
+    }
+    .left {
+        display: inline-block;
+        text-align: left;
+    }
+
+    .nav {
+        padding: 0.3rem;
+        padding-right: 1rem;
+    }
+    .navbar-menu {
+        background-color: #2e5181;
+        margin-top: -60px;
+    }
+    #sidebar {
+        padding-right: 10px;
+    }
+    div .is-9 {
+        padding: 0px;
+    }
+    .section {
+        padding: 2rem 1.5rem;
+    }
+    .section {
+        padding-top: 0;
+        padding-bottom: 0;
+        margin-left: 0.48rem;
+        margin-right: 0.48rem;
+        margin-bottom: 4px;
+    }
+    .dashboard-text {
+        display: block;
+        padding-top: 2rem;
+        padding-bottom: 2rem;
+    }
+
+    /* TODO: align autopilot to the right */
+    .column.autopilot.is-vertical-center {
+        margin-top: 37px;
+        margin-bottom: 33px;
+    }
+    /* TODO: REFACTOR */
+    body > div > div.column.is-9 > section:nth-child(2) > div > div > div:nth-child(3) > div {
+        margin-bottom: 1.5rem;
+    }
+}
+
+/* Section blocks */
+.section-no-padding {
+    padding-top: 0px;
+}

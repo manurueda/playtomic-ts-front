@@ -1,0 +1,130 @@
+/* GENERAL SETTINGS */
+body,
+html {
+  margin: 0px;
+  padding: 0px;
+  font-family: "San Francisco";
+  -ms-overflow-style: none;
+  overflow: -moz-scrollbars-none;
+  background: #f2f5f7;
+  color: #2e4369;
+}
+body::-webkit-scrollbar {
+  display: none;
+}
+input:focus,
+textarea:focus,
+button:focus {
+  outline: none;
+}
+
+.login-container {
+  max-width: 370px;
+}
+.login-logo {
+  padding-top: 2.85rem;
+}
+
+.login-header {
+  padding-top: 0.66rem;
+  font-size: 1rem;
+  padding-bottom: 2rem;
+}
+.login-button {
+  color: #2e4369;
+  padding: 30px 92px 30px 92px;
+  font-family: "San Francisco Medium";
+  font-size: 14px;
+}
+
+.login-button:hover {
+  border-radius: 3px;
+  box-shadow: 0 0 0 2px rgba(0, 185, 255, 0.23), 0 0 0 1px #00b9ff;
+  background-color: #fff;
+  cursor: pointer;
+  color: #2e5181;
+}
+
+.login-button:active {
+  border-radius: 3px;
+  box-shadow: 0 0 0 2px rgba(0, 185, 255, 0.23), 0 0 0 1px #00b9ff,
+    0 10px 20px 0 rgba(167, 177, 184, 0.22);
+  color: #00b9ff;
+}
+
+.login-form {
+  font-size: 15px;
+  margin-left: 1rem;
+  margin-right: 1rem;
+}
+
+#login-input {
+  background-color: white;
+}
+#login-input:focus {
+  background-color: #f2f5f7;
+}
+.login-input {
+  font-family: "San Francisco Regular";
+  font-size: 17px;
+  border: none;
+  border-bottom: 1px solid #d0dadf;
+  padding-bottom: 10px;
+  padding-left: 0;
+  margin-left: 0;
+  box-shadow: none;
+  margin-bottom: 20px;
+  border-radius: 0px;
+}
+
+.login-input:focus {
+  font-family: "San Francisco Regular";
+  font-size: 17px;
+  color: #2e4369;
+
+  border: none;
+  border-bottom: 1px solid #d0dadf;
+  padding-bottom: 5px;
+  padding-left: none;
+  margin-left: none;
+  box-shadow: none;
+  margin-bottom: 20px;
+}
+.login-input::placeholder {
+  color: #829ca9;
+  background-color: none;
+}
+
+#login-divider {
+  display: block;
+  position: relative;
+  border-top: 1px solid #dbdbdb;
+  height: 1px;
+  margin: 2rem 0;
+  text-align: center;
+}
+
+#login-divider::after {
+  background: #fff;
+  color: #2e4369;
+  content: attr(data-content);
+  display: inline-block;
+  font-size: 0.75rem;
+  padding: 0.4rem 0.8rem;
+  -webkit-transform: translateY(-1.1rem);
+  -ms-transform: translateY(-1.1rem);
+  transform: translateY(-1.1rem);
+  text-align: center;
+}
+
+.login-register-text {
+  color: #2e4369;
+  font-size: 0.8rem;
+}
+
+.login-extra-links {
+  height: 14px;
+  font-size: 12px;
+  font-weight: 500;
+  color: var(--bluey-grey-three);
+}

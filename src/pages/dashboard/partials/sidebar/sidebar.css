@@ -1,0 +1,66 @@
+.sidebar {
+    padding-left: 2vw;
+}
+.sidebar-link,
+.sidebar-second-level-link {
+    padding: 0.75rem 1rem;
+}
+.sidebar-list {
+    padding: 0.75rem 2rem;
+}
+.sidebar-link:hover {
+    color: #00b9ff;
+}
+
+/*----------------------
+  FOR VIEWPORTS BIGGER 
+  THAN MOBILE 
+------------------------*/
+@media (min-width: 768px) {
+    /* layout reset */
+    .sidebar {
+        min-height: 100vh;
+        height: 100%;
+    }
+    .sidebar-header {
+        display: inline;
+    }
+    .navbar {
+        padding-top: 43px;
+    }
+}
+
+/*------------------
+      SIDEBAR 
+-------------------*/
+
+/* we add margin for big viewports */
+@media (min-width: 768px) {
+    .icon-airwork {
+        margin-top: 4vh;
+        margin-left: 1vh;
+    }
+}
+
+.sidebar-strategy {
+    display: inherit;
+}
+
+.sidebar-strategy[value="active"] > a > span,
+.sidebar-budget[value="active"] > a > span,
+.sidebar-planning[value="active"] > a > span,
+.sidebar-library[value="active"] > a > span,
+.sidebar-settings[value="active"] > a > span,
+
+
+/* sidebar burger */
+a.burger > span {
+    height: 2px;
+    width: 30px;
+    margin-bottom: 20px;
+}
+
+.navbar-burger:hover {
+    background-color: transparent;
+    color: white;
+}
