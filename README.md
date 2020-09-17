@@ -3,15 +3,15 @@
 ### INSTRUCTIONS TO LAUNCH
 
 1. Install dependencies
-   yarn install
+   `yarn install`
 
 2. Start the server
-   npm run dev
+   `npm run dev`
 
 3. Launch the front
-   yarn start
+   `yarn start`
 
 ### Login
 
-user: jm.glezderueda@gmail.com
-pass: asdfasdf
+-   user: `jm.glezderueda@gmail.com`
+-   pass: `asdfasdf`
